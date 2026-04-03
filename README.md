@@ -2,6 +2,14 @@
 
 GitHub Pages 用の静的LPです。トップURLは `index.html`、同一内容の別名ファイルは `invitation_higashiyama.html`（`/invitation_higashiyama.html` でも開けます）。
 
+## 現在の公開URL（ユーザー名: masa36230）
+
+- トップ: `https://masa36230.github.io/kaomiawase-invitation-higashiyama/`
+- 別名: `https://masa36230.github.io/kaomiawase-invitation-higashiyama/invitation_higashiyama.html`
+- リポジトリ: `https://github.com/masa36230/kaomiawase-invitation-higashiyama`
+
+※ 旧ユーザー名のURLからは、しばらくリダイレクトされることがあります。**共有・印刷するリンクは上記の新URLに統一**してください。
+
 ## 公開手順（初回）
 
 1. ターミナルで GitHub CLI にログインする  
@@ -25,15 +33,13 @@ git push
 
 数分後にサイトへ反映されます。
 
-## Pages の URL に「12」などを含めたくない場合
+## Pages の URL とユーザー名について
 
-GitHub Pages のユーザー向けURLは次の形で、**先頭のユーザー名は GitHub アカウントのログイン名**です。
+GitHub Pages のユーザー向けURLは次の形で、**先頭は GitHub アカウントのログイン名**です。
 
 `https://<GitHubユーザー名>.github.io/<リポジトリ名>/`
 
-- **リンクはユーザー名を変えれば変わります。** リポジトリ名だけ変えても、`*.github.io` の左側はアカウント名のままです。
-- **対処1（推奨）**: GitHub にログイン → **Settings（設定）** → **Account** → **Change username** で、使いたい名前（例: `masafumi` や `masakaitsu`）に変更する。利用可能な名前のみ登録できます。変更後のURLは `https://<新ユーザー名>.github.io/<リポジトリ名>/` になります。しばらく旧URLからのリダイレクトが効くことがありますが、**共有リンクは新URLに差し替える**のが確実です。
-- **対処2**: 別アカウント（名前に数字を含めない）でリポジトリを作り直し、このフォルダを push し直す。
-- **対処3**: 独自ドメインを当てる（Pages の Custom domain）。`example.com` ならユーザー名はURLに出ません。
+- ユーザー名を変えたあと、**このフォルダの `git remote`** を新しいURLに合わせると安全です（例: `git remote set-url origin https://github.com/masa36230/kaomiawase-invitation-higashiyama.git`）。
+- ユーザー名をURLに出したくない場合は、**独自ドメイン**（Pages の Custom domain）の利用も検討できます。
 
-エージェント側からアカウント名の変更は実行できないため、上記は GitHub の画面またはご自身のターミナルで実施してください。
+エージェント側からアカウント名の変更は実行できないため、変更は GitHub の画面で実施してください。
